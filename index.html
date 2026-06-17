@@ -13,7 +13,7 @@
 	<meta name="twitter:title" content="Aaradhana S - Portfolio">
 	<meta name="twitter:description" content="Computer Science and Business Systems student showcasing projects, skills, and experience.">
 
-	<link rel="icon" type="image/png" href="/images/favicon.png">
+	<link rel="icon" type="image/png" href="images/favicon.png">
 
 	<title>Portfolio AARADHANA</title>
 
@@ -75,6 +75,23 @@
             text-align: left;
         }
 
+        .resume-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 22px;
+            background: #555;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 15px;
+            transition: background 0.3s ease;
+        }
+
+        .resume-btn:hover {
+            background: #333;
+        }
+
         .profile-pic {
             width: 180px;
             height: 180px;
@@ -107,7 +124,7 @@
         }
 
         .project-box:hover .details {
-            max-height: 600px;
+            max-height: 250px;
             opacity: 1;
             margin-top: 12px;
         }
@@ -117,11 +134,13 @@
         }
 
         .project-image {
-            width: 100%;
-            object-fit: contain;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
             border-radius: 8px;
-            margin-top: 12px;
-            background: #f4f4f4;
+            border: 3px solid #f0f0f0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
         }
 
         .project-link {
@@ -219,20 +238,30 @@
             margin: 4px 0;
         }
 
+        .cert-link {
+            display: inline-block;
+            margin-top: 8px;
+            color: #666;
+            font-weight: bold;
+            text-decoration: underline;
+            font-size: 14px;
+        }
+
         .achievements-list {
             max-width: 600px;
             margin: 0 auto;
             display: flex;
             flex-direction: column;
-            gap: 14px;
+            gap: 8px;
         }
 
         .achievement-item {
             background: white;
-            padding: 16px 22px;
-            border-radius: 12px;
-            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+            padding: 10px 16px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.06);
             text-align: left;
+            font-size: 14px;
         }
 
         .achievement-item strong {
@@ -336,10 +365,11 @@
 
     <section id="home" class="home">
         <div class="home-content">
-            <img src="/images/profile.jpeg" alt="Aaradhana S" class="profile-pic">
+            <img src="images/profile.jpeg" alt="Aaradhana S" class="profile-pic">
             <div class="home-text">
                 <h1>AARADHANA S</h1>
                 <h2>PORTFOLIO</h2>
+                <a href="files/Aaradhana_S_Resume.pdf" class="resume-btn" download>Download Resume</a>
             </div>
         </div>
     </section>
@@ -366,6 +396,7 @@
             <p>Bachelor of Technology in Computer Science and Business Systems</p>
             <p>CGPA: 8.94/10</p>
             <p>Expected Graduation: May 2028</p>
+            <a href="#" class="cert-link">View Certificate</a>
         </div>
     </section>
 
@@ -413,6 +444,7 @@
         <h2>Projects</h2>
 
         <div class="project-box">
+            <img src="images/food-waste-project.jpg" alt="Food Waste Management System" class="project-image">
             <h3>Food Waste Management System</h3>
             <div class="details">
                 <p>
@@ -420,11 +452,11 @@
                     donation of surplus food. Designed the database schema, implemented inventory tracking,
                     and built a workflow for matching surplus food with nearby NGOs in real time.
                 </p>
-                <img src="/images/food-waste-project.jpg" alt="Food Waste Management System" class="project-image">
             </div>
         </div>
 
         <div class="project-box">
+            <img src="images/blind-stick-project.jpg" alt="Blind Stick" class="project-image">
             <h3>Blind Stick</h3>
             <div class="details">
                 <p>
@@ -433,11 +465,11 @@
                     real-time obstacle detection, improving mobility and independence for users.
                 </p>
                 <a href="https://github.com/aaradhana-s/smart-blind-stick" class="project-link" target="_blank">View on GitHub →</a>
-                <img src="/images/blind-stick-project.jpg" alt="Blind Stick" class="project-image">
             </div>
         </div>
 
         <div class="project-box">
+            <img src="images/book-my-stay-project.jpg" alt="Book My Stay App" class="project-image">
             <h3>Book My Stay App</h3>
             <div class="details">
                 <p>
@@ -446,11 +478,11 @@
                     and admin-side management of listings and reservations.
                 </p>
                 <a href="https://github.com/aaradhana-s/BookMyStayApp" class="project-link" target="_blank">View on GitHub →</a>
-                <img src="/images/book-my-stay-project.jpg" alt="Book My Stay App" class="project-image">
             </div>
         </div>
 
         <div class="project-box">
+            <img src="images/soft-toy-project.jpg" alt="Aara Soft Toys & Crafts" class="project-image">
             <h3>Aara Soft Toys & Crafts</h3>
             <div class="details">
                 <p>
@@ -459,7 +491,6 @@
                     to highlight handmade products and drive online sales.
                 </p>
                 <a href="https://github.com/aaradhana-s/aarasofttoys" class="project-link" target="_blank">View on GitHub →</a>
-                <img src="/images/soft-toy-project.jpg" alt="Aara Soft Toys & Crafts" class="project-image">
             </div>
         </div>
     </section>
@@ -473,6 +504,7 @@
                 Gained exposure to enterprise systems, data management, and business operations
                 in a large-scale organization.
             </p>
+            <a href="#" class="cert-link">View Certificate</a>
         </div>
     </section>
 
